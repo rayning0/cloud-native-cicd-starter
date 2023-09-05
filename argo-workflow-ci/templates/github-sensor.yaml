@@ -44,7 +44,7 @@ spec:
                     - name: git_branch
                 workflowTemplateRef:
                   name: {{ .Release.Name }}-build-template
-                  clusterScope: true
+                  # clusterScope: true
           parameters:
           # git_owner
           - dest: spec.arguments.parameters.0.value

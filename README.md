@@ -4,10 +4,10 @@ This repository contains an example methodology of deployment following the Argo
 
 # Getting Started
 
-1. Clone this repository
+1. Clone this repository, substituting krumIO for your username or organization where you have forked this repository.
 
     ```bash
-    git clone https://github.com/cloud-native-cicd-starter.git
+    git clone https://github.com/krumIO/cloud-native-cicd-starter.git
     cd cloud-native-cicd-starter
     ```
 

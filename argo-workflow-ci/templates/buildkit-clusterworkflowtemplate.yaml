@@ -17,7 +17,7 @@
 # * https://hub.docker.com/r/moby/buildkit
 #
 apiVersion: argoproj.io/v1alpha1
-kind: ClusterWorkflowTemplate
+kind: WorkflowTemplate
 metadata:
   name: {{ .Release.Name }}-build-template
 spec:

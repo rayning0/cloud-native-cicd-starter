@@ -8,7 +8,6 @@ syncPolicy:
     - CreateNamespace=true
 gitops:
   repoURL: https://github.com/krumIO/cloud-native-cicd-starter.git
-  values: app-of-apps-values.yaml
 spec:
   applications:
     # - name: baseline-wp

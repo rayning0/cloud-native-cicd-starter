@@ -4,8 +4,7 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
 
   tag: "20230822T154742"
-imagePullSecrets:
-  - name: docker-push-user
+imagePullSecrets: []
 service:
   type: ClusterIP
   port: 3000
@@ -16,7 +15,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: react.131.153.227.137.sslip.io
+    - host: react.74.220.17.50.sslip.io
       paths:
         - path: /
           pathType: Prefix

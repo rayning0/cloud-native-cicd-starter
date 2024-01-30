@@ -16,7 +16,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: golang.131.153.227.137.sslip.io
+    - host: golang.74.220.17.50.sslip.io
       paths:
         - path: /
           pathType: Prefix

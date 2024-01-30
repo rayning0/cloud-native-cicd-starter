@@ -3,8 +3,7 @@ image:
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
-imagePullSecrets:
-  - name: docker-push-user
+imagePullSecrets: []
 service:
   type: ClusterIP
   port: 80
@@ -15,7 +14,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: laravel.131.153.227.137.sslip.io
+    - host: laravel.74.220.17.50.sslip.io
       paths:
         - path: /
           pathType: Prefix

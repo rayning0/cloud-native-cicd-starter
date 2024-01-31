@@ -196,6 +196,13 @@ spec:
             then
               buildctl-daemonless.sh build --frontend dockerfile.v0 --local context=. --local dockerfile=. --output type=image,name={{`{{inputs.parameters.docker_server}}`}}/{{`{{inputs.parameters.docker_prefix}}`}}${DOCKER_TARGET}:{{`{{inputs.parameters.docker_image_tag}}`}},push=true
             fi
+        resources:
+          requests:
+            memory: "1600Mi"
+            cpu: "400m"
+          limits:
+            memory: "1600Mi"
+            cpu: "400m"
     - name: deploy
       inputs:
         parameters:

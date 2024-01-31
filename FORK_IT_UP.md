@@ -1,5 +1,5 @@
 1. **Github**
-	1. Fork github repos:  cloud-native-cicd-starter & baseline-vue-app
+	1. Fork github repos:  [cloud-native-cicd-starter](https://github.com/krumIO/cloud-native-cicd-starter) & [baseline-vue-app](https://github.com/krumIO/baseline-vue-app)
 	2. Create github PAT, fine-grained:  write access for `Contents` and `Webhooks`
 2. **Docker**
 	1. Bring your own docker registry (dockerhub for our purposes, can cover others at secret creation)

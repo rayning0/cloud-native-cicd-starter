@@ -21,6 +21,7 @@ kind: WorkflowTemplate
 metadata:
   name: {{ .Release.Name }}-build-template
 spec:
+  serviceAccountName: {{ .Release.Name }}-workflow-controller-sa
   arguments:
     parameters:
       # git

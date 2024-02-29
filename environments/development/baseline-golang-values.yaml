@@ -26,7 +26,7 @@ resources:
     cpu: 50m
     memory: 300Mi
 autoscaling:
-  enabled: true
+  enabled: false
   minReplicas: 2
   maxReplicas: 5
   targetMemoryUtilizationPercentage: 1

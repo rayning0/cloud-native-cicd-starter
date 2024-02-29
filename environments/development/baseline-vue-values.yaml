@@ -9,7 +9,7 @@ service:
   port: 80
 ingress:
   enabled: true
-  className: "traefik"
+  className: "nginx"
   # annotations:
   #   cert-manager.io/cluster-issuer: letsencrypt-production
   #   kubernetes.io/ingress.class: nginx

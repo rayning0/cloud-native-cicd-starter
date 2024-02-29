@@ -15,7 +15,7 @@ ingress:
   #   kubernetes.io/ingress.class: nginx
   #   kubernetes.io/tls-acme: "true"
   hosts:
-    - host: vue.74.220.17.50.sslip.io
+    - host: vue.54.83.178.99.sslip.io
       paths:
         - path: /
           pathType: Prefix

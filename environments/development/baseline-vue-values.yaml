@@ -15,13 +15,13 @@ ingress:
   #   kubernetes.io/ingress.class: nginx
   #   kubernetes.io/tls-acme: "true"
   hosts:
-    - host: vue.54.83.178.99.sslip.io
+    - host: vue.3.93.77.249.sslip.io
       paths:
         - path: /
           pathType: Prefix
   # tls:
   #   - hosts:
-  #       - vue.74.220.17.50.sslip.io
+  #       - vue.3.93.77.249.sslip.io
   #     secretName: baseline-vue-app-tls
 resources:
   limits:

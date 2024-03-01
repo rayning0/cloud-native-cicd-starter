@@ -21,7 +21,7 @@ ingress:
           pathType: Prefix
   tls:
     - hosts:
-        - vue.3.93.77.249.sslip.io
+        - vue.54.167.2.101.sslip.io
       secretName: baseline-vue-app-tls
 resources:
   limits:

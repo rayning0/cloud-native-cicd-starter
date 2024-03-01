@@ -1,9 +1,9 @@
 # syncPolicy will allow you configure your default autosync configurations
 # for instance, `syncPolicy.automated={}` demonstrated below
 syncPolicy:
-  automated:
-    prune: true
-    selfHeal: true
+  automated: false
+    # prune: true
+    # selfHeal: true
   syncOptions:
     - CreateNamespace=true
 gitops:

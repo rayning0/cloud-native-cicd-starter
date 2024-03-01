@@ -1,7 +1,7 @@
 # syncPolicy will allow you configure your default autosync configurations
 # for instance, `syncPolicy.automated={}` demonstrated below
 syncPolicy:
-  automated: false
+  automated: {}
     # prune: true
     # selfHeal: true
   syncOptions:

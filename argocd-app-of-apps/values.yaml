@@ -18,22 +18,22 @@ spec:
       path: helm/baseline-golang-app
       repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
       targetRevision: HEAD
-    - name: baseline-react
-      path: helm/baseline-react-app
-      repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
-      targetRevision: HEAD
+    # - name: baseline-react
+    #   path: helm/baseline-react-app
+    #   repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
+    #   targetRevision: HEAD
     - name: baseline-vue
       path: helm/baseline-vue-app
       repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
       targetRevision: HEAD
-    - name: baseline-laravel
-      path: helm/example-laravel-app
-      repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
-      targetRevision: HEAD
-    - name: python-hello-world
-      path: helm/python-docs-hello-world
-      repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
-      targetRevision: HEAD
+    # - name: baseline-laravel
+    #   path: helm/example-laravel-app
+    #   repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
+    #   targetRevision: HEAD
+    # - name: python-hello-world
+    #   path: helm/python-docs-hello-world
+    #   repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git
+    #   targetRevision: HEAD
     # - name: umbrella
     #   path: helm/example-umbrella
     #   repoURL: https://github.com/krumIO/cloud-native-workshop-charts.git

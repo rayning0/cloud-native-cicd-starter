@@ -1,0 +1,32 @@
+image:
+  repository: krumware/baseline-vue-app
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+imagePullSecrets: []
+service:
+  type: ClusterIP
+  port: 80
+ingress:
+  enabled: true
+  className: "nginx"
+  # annotations:
+  #   cert-manager.io/cluster-issuer: letsencrypt-production
+  #   kubernetes.io/ingress.class: nginx
+  #   kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: vue.34.230.82.183.sslip.io
+      paths:
+        - path: /
+          pathType: Prefix
+  # tls:
+  #   - hosts:
+  #       - vue.34.230.82.183.sslip.io
+  #     secretName: baseline-vue-app-tls
+resources:
+  limits:
+    cpu: 200m
+    memory: 300Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi

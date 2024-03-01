@@ -24,7 +24,7 @@ ingress:
   tls: 
     - hosts:
         - golang.3.80.64.224.sslip.io
-      secretName: golang-vue-app-tls
+      secretName: golang-app-tls
 resources:
   limits:
     cpu: 50m

@@ -10,8 +10,8 @@ service:
 ingress:
   enabled: true
   className: "nginx"
-  # annotations:
-  #   cert-manager.io/cluster-issuer: letsencrypt-production
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-production
   #   kubernetes.io/ingress.class: nginx
   #   kubernetes.io/tls-acme: "true"
   hosts:
@@ -19,10 +19,10 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-  # tls:
-  #   - hosts:
-  #       - vue.3.93.77.249.sslip.io
-  #     secretName: baseline-vue-app-tls
+  tls:
+    - hosts:
+        - vue.3.93.77.249.sslip.io
+      secretName: baseline-vue-app-tls
 resources:
   limits:
     cpu: 200m

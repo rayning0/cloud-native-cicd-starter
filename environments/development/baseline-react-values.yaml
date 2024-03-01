@@ -15,7 +15,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: react.74.220.17.50.sslip.io
+    - host: react.3.93.77.249.sslip.io
       paths:
         - path: /
           pathType: Prefix

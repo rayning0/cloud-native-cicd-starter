@@ -7,7 +7,7 @@ spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
-  description: Mozart project shell.
+  description: My app project shell.
   destinations:
     - name: in-cluster
       namespace: {{ $env.destination.namespace }}

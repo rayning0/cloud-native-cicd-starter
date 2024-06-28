@@ -4,47 +4,47 @@
 docker:
   # server: docker-registry.131.153.227.137.sslip.io
   server: docker.io
-  prefix: krumware/
+  prefix: rayning0/
   secretName: docker-push-user
 
 github:
   # github repository owner
-  owner: krumIO
+  owner: rayning0
   # the list of repositories to build on push events
   repositories:
-    python-docs-hello-world:
-      values: python-hello-world-values.yaml
-      branches:
-        master: "python-docs-hello-world"
-    baseline-react-app:
-      values: baseline-react-values.yaml
-      branches:
-        main: "baseline-react-app"
+    # python-docs-hello-world:
+    #   values: python-hello-world-values.yaml
+    #   branches:
+    #     master: "python-docs-hello-world"
+    # baseline-react-app:
+    #   values: baseline-react-values.yaml
+    #   branches:
+    #     main: "baseline-react-app"
     baseline-vue-app:
       values: baseline-vue-values.yaml
       branches:
         main: "baseline-vue-app"
-    example-laravel-app:
-      values: baseline-laravel-values.yaml
-      branches:
-        main: "example-laravel-app"
-    baseline-golang-app:
-      values: baseline-golang-values.yaml
-      branches:
-        main: "baseline-golang-app"
+    # example-laravel-app:
+    #   values: baseline-laravel-values.yaml
+    #   branches:
+    #     main: "example-laravel-app"
+    # baseline-golang-app:
+    #   values: baseline-golang-values.yaml
+    #   branches:
+    #     main: "baseline-golang-app"
   # configures where automated tagging commits are sent
-  automateCommits: false
+  automateCommits: true
   deploymentRepository: cloud-native-cicd-starter
   deploymentFolderPath: environments/development
 
-  # configures our expected inbound webhook route which Github will be 
+  # configures our expected inbound webhook route which Github will be
   webhook:
-    domain: rancher.74.220.17.50.sslip.io
-    hostname: https://rancher.74.220.17.50.sslip.io
+    domain: rancher.212.2.242.182.sslip.io
+    hostname: https://rancher.212.2.242.182.sslip.io
     port: 12000
     endpoint: /api/webhook
 
-  # allows webhook creation & commit automation  
+  # allows webhook creation & commit automation
   machineUserToken:
     name: github-machine-user
     key: token
